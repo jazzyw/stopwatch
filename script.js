@@ -17,7 +17,7 @@ function timeToString(time) {
     let ss = Math.floor(diffInSec);
 
     // same procedure for milliseconds
-    let diffInMs = (diffInSec - ss) * 1000;
+    let diffInMs = (diffInSec - ss) * 100;
     let ms = Math.floor(diffInMs);
 
     // format the strings, use padStart
@@ -30,7 +30,7 @@ function timeToString(time) {
 
 // declare variables to use in our functions below, we need startTime, elapsedTime, and the timerInterval
 let startTime;
-let elaspedTime = 0;
+let elapsedTime = 0;
 let timerInterval;
 
 // function that sets the display element's innerHTML equal to the passed in text
